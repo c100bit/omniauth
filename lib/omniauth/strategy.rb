@@ -441,6 +441,7 @@ module OmniAuth
     end
 
     def callback_url
+      puts full_host + script_name + callback_path + query_string
       full_host + script_name + callback_path + query_string
     end
 
